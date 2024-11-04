@@ -331,8 +331,8 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}/nginx-oss-s3-gateway:latest-${{ steps.date.outputs.date }}
             ghcr.io/${{ github.repository }}/nginx-oss-s3-gateway:latest
-            nginxinc/nginx-s3-gateway:latest-${{ steps.date.outputs.date }}
-            nginxinc/nginx-s3-gateway:latest
+            mahbackhurts/nginx-s3-gateway:latest-${{ steps.date.outputs.date }}
+            mahbackhurts/nginx-s3-gateway:latest
 
       - name: Build and push image [latest-njs]
         uses: docker/build-push-action@4f58ea79222b3b9dc2c8bbdd6debcef730109a75 # v6.9.0
@@ -347,8 +347,8 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}/nginx-oss-s3-gateway:latest-njs-oss-${{ steps.date.outputs.date }}
             ghcr.io/${{ github.repository }}/nginx-oss-s3-gateway:latest-njs-oss
-            nginxinc/nginx-s3-gateway:latest-njs-oss-${{ steps.date.outputs.date }}
-            nginxinc/nginx-s3-gateway:latest-njs-oss
+            mahbackhurts/nginx-s3-gateway:latest-njs-oss-${{ steps.date.outputs.date }}
+            mahbackhurts/nginx-s3-gateway:latest-njs-oss
 
       - name: Build and push image [unprivileged]
         uses: docker/build-push-action@4f58ea79222b3b9dc2c8bbdd6debcef730109a75 # v6.9.0
@@ -363,5 +363,5 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}/nginx-oss-s3-gateway:unprivileged-oss-${{ steps.date.outputs.date }}
             ghcr.io/${{ github.repository }}/nginx-oss-s3-gateway:unprivileged-oss
-            nginxinc/nginx-s3-gateway:unprivileged-oss-${{ steps.date.outputs.date }}
-            nginxinc/nginx-s3-gateway:unprivileged-oss
+            mahbackhurts/nginx-s3-gateway:unprivileged-oss-${{ steps.date.outputs.date }}
+            mahbackhurts/nginx-s3-gateway:unprivileged-oss
