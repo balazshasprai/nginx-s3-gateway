@@ -7,6 +7,7 @@ max_size=$PROXY_CACHE_MAX_SIZE
 inactive=$PROXY_CACHE_INACTIVE
 use_temp_path=off;
 
+proxy_ignore_headers Cache-Control;
 
 proxy_cache_path /var/cache/nginx/s3_proxy_slices
 levels=1:2
